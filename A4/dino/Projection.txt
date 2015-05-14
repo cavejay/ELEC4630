@@ -1,0 +1,11 @@
+Given a voxel in real space, we want to project it onto the image seen by a specific camera to find out which pixel sees that voxel.
+
+Let the voxel v have world-coordinates (a, b, c), and the corresponding pixel p have image-coordinates (x, y) which we want to derive.  Let P be the 3 x 4 projection matrix for that particular camera.
+
+Then:
+
+v = [a, b, c, 1];
+
+p = P * v;
+
+[x, y] = p(1:2) ./ p(3);

@@ -1,0 +1,8 @@
+The box containing the dinosaur in world coordinates has the following coordinates:
+
+min x: -180
+max x:   90
+min y:  -80
+max y:   70
+min z:   20
+max z:  460
